@@ -1,0 +1,43 @@
+.nav-wrapper {
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  overflow-x: hidden;
+  .logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .items {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .btn-trial {
+    font-family: "Montserrat";
+    font-style: normal;
+    width: 132px;
+    height: 47px;
+    font-size: 16px;
+    color: white;
+    border-radius: 34px;
+    background: #20263a;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+  }
+}
