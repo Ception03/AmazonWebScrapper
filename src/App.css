@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(250, 131, 51), rgba(0, 0, 0, 0)),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+h1 {
+    position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  top: -100px;
+}
+
+h3 {
+    position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: "Montserrat";
+  font-weight: 200;
+  top: -130px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+    position: relative;
+    top: -130px;
+    font-family: "Montserrat";
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  border-radius: 27px;
+  border: none;
+  width: 300%;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(135, 128, 31, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.1s;
+}
+input:focus {
+  outline: none;
+  transform: scale(1.1);
+  box-shadow: 0 8px 32px 0 rgba(252, 203, 43, 0.37);
+}
+input::placeholder {
+  color: white;
+  font-family: "Montserrat";
+}
+
+button {
+    position: relative;
+    top: -130px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.1s;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(228, 210, 55, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: "Montserrat";
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-spinner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border: 3px solid #ffdb66;
+    border-top-color: #ff6a14;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    z-index: 1;
+  }
+
+@media (max-width: 480px) {
+  input {
+    width: 190%;
+  }
+  .logo {
+    position: absolute;
+    top: 15px;
+    left: 30%;
+  }
+  .loading-spinner{
+    top: 70%;
+  }
+}
