@@ -34,7 +34,7 @@ const App = () => {
           },
         };
 
-        let page = 1;
+        let page = 200;
         const totalPagesToScrape = 10; // Set the desired number of pages to scrape
 
         const scrapedData = [];
